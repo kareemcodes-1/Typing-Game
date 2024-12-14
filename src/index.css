@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #000000d9;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.hidden-textarea {
+  color: transparent; /* Makes typed text invisible */
+  background-color: transparent; /* Ensures no background interferes */
+  caret-color: transparent; /* Hides the blinking caret */
+  border: none; /* Optional: Remove any visible border */
+  outline: none; /* Optional: Remove focus outline */
+}
+
+.hidden-textarea::placeholder {
+  color: transparent; /* Makes placeholder invisible if needed */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  }
